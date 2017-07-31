@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAEA,CAAC;EACA,MAAM,EAAC,iBAAiB;;AAEzB,SAAS;EACR,OAAO,ECNS,IAAI;;ADQrB,GAAG;EACF,gBAAgB,EAAC,gBAAe",
+"sources": ["../../../src/scss/style.scss","../../../src/scss/_espacios.scss"],
 "names": [],
 "file": "main.css"
 }
