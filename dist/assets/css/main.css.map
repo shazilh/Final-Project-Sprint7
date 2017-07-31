@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAEA,CAAC;EACA,MAAM,EAAC,iBAAiB;;AAEzB,SAAS;EACR,OAAO,ECNS,IAAI;;ADQrB,GAAG;EACF,gBAAgB,EAAC,gBAAe",
+"mappings": "AAEA,SAAS;EACR,OAAO,ECHS,IAAI;;ADKrB,UAAU;EACT,WAAW,ECLQ,IAAI;;ADOxB,GAAG;EACF,OAAO,EAAC,cAAa;;AAEtB,KAAK;EACJ,OAAO,EAAC,YAAY;EACpB,YAAY,EAAC,cAAa;EAE1B,KAAK,EAAC,eAAc;;AAErB,QAAQ;EACP,WAAW,EAAC,KAAK",
 "sources": ["../../../src/scss/style.scss","../../../src/scss/_espacios.scss"],
 "names": [],
 "file": "main.css"
