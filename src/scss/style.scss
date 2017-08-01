@@ -1,5 +1,8 @@
 @import 'espacios';
-
+@import 'fuentes';
+*{
+    margin:0;
+}
 .icon-soc{
 	padding:$espacio-enlaces;
 }
@@ -16,5 +19,71 @@ ul li{
 	color:grey!important;
 }
 .espacio{
-	margin-left:400px;
+	margin-left:250px;
+}
+.under{
+	width:100%;
+}
+.footer-png{
+    width: 100%;
+}
+
+.pos-ab{
+	position:absolute;
+}
+.pos-rel{
+    position:relative;
+}
+
+.elementos{
+  padding: 5%;
+  padding-right: 42%;
+  margin-top: 10%;
+   
+}
+.ciudad{
+    width: 100%;
+}
+#hill{
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/home/slider-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h4{
+    font-family: $fuente-maven;
+}
+.estilo-parrafo{
+    font-size: $tamano-fuente;
+}
+.pos-casa{
+    margin-top: 20%;
+    margin-left: 230px!important;
+}
+.pos-hill{
+    margin-top: 150px;
+}
+.pos-bird1{
+    margin-top: 20%;
+    margin-left: 180px;
+}
+.pos-sun{
+    margin-top: 20%;
+    margin-left: 280px;
+}
+.pos-bird2{
+    margin-top: 15%;
+    margin-left: 600px;
+}
+.btn{
+    background-color: transparent!important;
+    color:aquamarine!important;
+    border-color: aquamarine!important;
+    border-style: solid!important;
+    border-radius: 25%!important;
+    margin-left: 40px!important;
+}
+.mg-l{
+    margin-left:  40px;
 }
