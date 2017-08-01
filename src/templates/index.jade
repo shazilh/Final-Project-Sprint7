@@ -57,12 +57,61 @@ html(lang="es")
                                 img.right.pos-ab.pos-casa.responsive-img(src="assets/img/home/slider/house.png")
                                 img.right.pos-ab.responsive-img.pos-sun(src="assets/img/home/slider/sun.png")
                         +parrafo-princ("We are creative nerds","Why our Clients love to work with us lore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
-            .container-fluid
-                    img.under(src="assets/img/home/under.png")
-            .container-fluid
-                    img.footer-png(src="assets/img/home/footer.png")
-            .container.pos-rel
-                img.pos-rel(src="assets/img/home/profile1.png")
+            .section#parrafos.container-fluid
+                .row
+                    mixin parrafos(titulo,parrafo)
+                        .col.s4.center
+                            h4.mg-t #{titulo}
+                            p.estilo-parrafo #{parrafo}
+                    +parrafos("Increadibly Responsive","Why our Clients love to work with us lore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+                        .col.s4.center
+                            h4.mg-t #{titulo}
+                            p.estilo-parrafo #{parrafo}
+                    +parrafos("Superior Typography","Why our Clients love to work with us lore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+                        .col.s4.center
+                            h4.mg-t #{titulo}
+                            p.estilo-parrafo #{parrafo}
+                    +parrafos("Swift Page Builder","Why our Clients love to work with us lore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+            section#bicicleta-div
+                .row
+                    .col.s12
+                        img.right(src="assets/img/home/tour-icon2.png")
+            section#dos-columnas
+                .row
+                    .col.s6.center
+                        img(src="assets/img/home/image1.png")
+                    .col.s6.left
+                        mixin parrafo-largo(titulo,parrafo)
+                                h5 #{titulo}
+                                p #{parrafo}
+                        +parrafo-largo("Swift Page Builder","Why our Clients love to work with us lore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.")
+                .row
+                    .col.s6.center
+                        mixin parrafo-largo(titulo,parrafo)
+                                h5 #{titulo}
+                                p.right #{parrafo}
+                        +parrafo-largo("Swift Page Builder","Why our Clients love to work with us lore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.")
+                    .col.s6.left
+                        img(src="assets/img/home/image2.png")
+                .row
+                    .col.s6.center
+                            img(src="assets/img/home/image3.png")
+                        .col.s6.left
+                            mixin parrafo-largo(titulo,parrafo)
+                                    h5 #{titulo}
+                                    p #{parrafo}
+                            +parrafo-largo("Swift Page Builder","Why our Clients love to work with us lore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.")
+            section#timon
+                .row
+            section#gotas
+                .row
+                    .container-fluid
+                        img.under(src="assets/img/home/under.png")
+            section#final
+                .row
+                    img.pos-rel.cuadro-azul(src="assets/img/home/profile1.png")
+                .row
+                    img.pos-rel.cuadro-verde(src="assets/img/home/profile2.png")
          script(type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js")               
          script(type="text/javascript" src="../node_modules/materialize-css/dist/js/materialize.min.js")
          script(type="text/javascript" src="./assets/js/main.js")
