@@ -109,9 +109,44 @@ html(lang="es")
                         img.under(src="assets/img/home/under.png")
             section#final
                 .row
-                    img.pos-rel.cuadro-azul(src="assets/img/home/profile1.png")
+                    .col.s2
+                        h5.right Testimonial
+                        img.pos-rel.cuadro-azul(src="assets/img/home/profile1.png")
+                    .col.s3
+                        mixin frase(palabras,autor)
+                              p #{palabras}
+                              p #{autor}
+                        +frase("Why our Clients love to work with us lore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.","_John Kalis")
+                        br
+                        br
+                        +frase("Why our Clients love to work with us lore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.","_John Kalis")
+                    .col.s3
+                        .row
+                            h5.left Contacts
+                        .row
+                            p Email:shazil.tovar@gmail.com
+                            p Phone:+1(232)456 898
+                            p Fax:+1(232)456 898
+                        .row
+                            h5.left Address
+                        .row
+                            p Antonio Caso Mz.66
+                            p Lote 13, Col Zona Escolar
+                            p Gustavo A. Madero
+                    .col.s4
+                        .row
+                            h5.left Send A Message
+                            .row
+                                .s3
+                                    input.input-field(type="text", placeholder="Name")
+                                    br
+                                    input.input-field(type="text", placeholder="Email Id")
+                                    br
+                                    textarea.tamano-textarea(type="text", placeholder="Your text here")
+                                    button.estilo-btn SUBMIT
                 .row
-                    img.pos-rel.cuadro-verde(src="assets/img/home/profile2.png")
+                    .col.s1
+                        img.cuadro-verde(src="assets/img/home/profile2.png")
          script(type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js")               
          script(type="text/javascript" src="../node_modules/materialize-css/dist/js/materialize.min.js")
          script(type="text/javascript" src="./assets/js/main.js")
