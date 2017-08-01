@@ -42,37 +42,37 @@ html(lang="es")
                                     li
                                       a(href="#")
                                             i.material-icons search
-            section#hill.container-fluid
+            section#hill.container-fluid.col.m6
                     .row
                         mixin parrafo-princ(titulo,parrafo)
-                            .col.s6
+                            .col.s6.m6
                                 .elementos
                                     h4 #{titulo}
                                     p.estilo-parrafo #{parrafo}
                                 button.btn.right-align Sign Up
-                            .container.col.s6
+                            .container.col.s6.m6
                                 img.right.pos-rel.pos-hill.responsive-img(src="assets/img/home/slider/hill.png")  
                                 img.right.pos-ab.responsive-img.pos-bird1(src="assets/img/home/slider/birds1.png")
                                 img.right.pos-ab.responsive-img.pos-bird2(src="assets/img/home/slider/birds2.png")
                                 img.right.pos-ab.pos-casa.responsive-img(src="assets/img/home/slider/house.png")
                                 img.right.pos-ab.responsive-img.pos-sun(src="assets/img/home/slider/sun.png")
                         +parrafo-princ("We are creative nerds","Why our Clients love to work with us lore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
-            .section#parrafos.container-fluid
+            .section#parrafos.container-fluid.col.m6
                 .row
                     mixin parrafos(titulo,parrafo)
-                        .col.s4.center
+                        .col.s4.m6.center
                             h4.mg-t #{titulo}
                             p.estilo-parrafo #{parrafo}
                     +parrafos("Increadibly Responsive","Why our Clients love to work with us lore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
-                        .col.s4.center
+                        .col.s4.m6.center
                             h4.mg-t #{titulo}
                             p.estilo-parrafo #{parrafo}
                     +parrafos("Superior Typography","Why our Clients love to work with us lore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
-                        .col.s4.center
+                        .col.s4.m6.center
                             h4.mg-t #{titulo}
                             p.estilo-parrafo #{parrafo}
                     +parrafos("Swift Page Builder","Why our Clients love to work with us lore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
-            section#bicicleta-div
+            section#bicicleta-div.col.m6
                 .row
                     .col.s12
                         img.right(src="assets/img/home/tour-icon2.png")
@@ -103,6 +103,7 @@ html(lang="es")
                             +parrafo-largo("Swift Page Builder","Why our Clients love to work with us lore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.")
             section#timon
                 .row
+        footer
             section#gotas
                 .row
                     .container-fluid

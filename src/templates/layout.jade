@@ -1,0 +1,96 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", type="text/css", href="./assets/css/main.css")
+        link(rel="stylesheet", type="text/css" ,href="../node_modules/materialize-css/dist/css/materialize.min.css")
+        link(href="https://fonts.googleapis.com/css?family=Maven+Pro", rel="stylesheet")
+        link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
+        title Replica con Pug
+    body
+        .container-fluid.responsive-img
+                .col.s12
+                    ul.right
+                       li
+                          img.response.img(src="assets/img/pre-nav/facebook-logo.png" class="icon-soc" href="#")
+                          img.response.img(src="assets/img/pre-nav/google-plus-logo.png" class="icon-soc" href="#")
+                          img.response.img(src="assets/img/pre-nav/linkedin-letters.png" class="icon-soc" href="#")
+                          img.response.img(src="assets/img/pre-nav/twitter.png" class="icon-soc" href="#")
+        .container-fluid
+                .row
+                  .col.s12.m12.l12
+                        .col.s6.left
+                                img.mg-l.responsive-img(src="assets/img/logo.png")
+                        .container-fluid.responsive-img
+                            .col.s6
+                                  ul.right
+                                    li
+                                      a(href="#") HOME
+                                    li
+                                      a(href="#") PAGES
+                                            i.material-icons arrow_drop_down
+                                    li
+                                      a(href="#") BLOG
+                                            i.material-icons arrow_drop_down
+                                    li
+                                      a(href="#") PORTAFOLIO
+                                            i.material-icons arrow_drop_down
+                                    li
+                                      a(href="#") SHORTCODES
+                                            i.material-icons arrow_drop_down
+                                    li
+                                      a(href="#")
+                                            i.material-icons search
+        block main 
+        footer
+            section#timon
+                .row
+            section#gotas
+                .row
+                    .container-fluid
+                        img.under(src="assets/img/home/under.png")
+            section#final
+                .row
+                    .col.s2
+                        h5.right Testimonial
+                        img.pos-rel.cuadro-azul(src="assets/img/home/profile1.png")
+                    .col.s3
+                        mixin frase(palabras,autor)
+                              p #{palabras}
+                              p #{autor}
+                        +frase("Why our Clients love to work with us lore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.","_John Kalis")
+                        br
+                        br
+                        +frase("Why our Clients love to work with us lore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.","_John Kalis")
+                    .col.s3
+                        .row
+                            h5.left Contacts
+                        .row
+                            p Email:shazil.tovar@gmail.com
+                            p Phone:+1(232)456 898
+                            p Fax:+1(232)456 898
+                        .row
+                            h5.left Address
+                        .row
+                            p Antonio Caso Mz.66
+                            p Lote 13, Col Zona Escolar
+                            p Gustavo A. Madero
+                    .col.s4
+                        .row
+                            h5.left Send A Message
+                            .row
+                                .s3
+                                    input.input-field(type="text", placeholder="Name")
+                                    br
+                                    input.input-field(type="text", placeholder="Email Id")
+                                    br
+                                    textarea.tamano-textarea(type="text", placeholder="Your text here")
+                                    button.estilo-btn SUBMIT
+                .row
+                    .col.s1
+                        img.cuadro-verde(src="assets/img/home/profile2.png")
+         script(type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js")               
+         script(type="text/javascript" src="../node_modules/materialize-css/dist/js/materialize.min.js")
+         script(type="text/javascript" src="./assets/js/main.js")
+         
