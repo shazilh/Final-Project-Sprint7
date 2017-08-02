@@ -6,3 +6,25 @@ block append main
                    .col.s12.left
                         h1 Pricing Table
                         h6 Configure your pricing table
+        section#pricing-table
+            .container-fluid
+                .row
+                    .col.s12.m12.l12.center
+                        p#action-prices
+                            .row
+                                script(type="text/x-handlebars-template", id="index2")
+                                    p. {{{#each[paquete_tipo]}}}
+                                    .col.s3
+                                        .caja-principal.center {{{tipo}}}
+                                            p.caja-triangulo.center {{{ precio }}}
+                                                ul.center
+                                                    li.letra-gris {{{lorem1}}} Lorem ipsum dolor sit amet
+                                                    li.letra-gris {{{lorem2}}} Consectetuer adipiscing elit
+                                                    li.letra-gris {{{lorem3}}} Nulla consequat massa quis enim
+                                                    li.letra-gris {{{lorem4}}} Aenean vulputate eleifend tellus
+                                                    li.letra-gris {{{lorem5}}} Donec sodales sagittis magna
+                                                    li.letra-gris {{{lorem6}}} Curabitur ullamcorper ultricies nisi
+                                                    li.letra-gris.center {{{buy}}} BUY NOW
+        script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js")  
+        script(type="text/javascript", src="../template.js", id="index2")
+        script(type="text/javascript" src="./assets/js/main.js")
