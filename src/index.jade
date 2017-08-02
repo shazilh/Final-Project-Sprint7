@@ -57,21 +57,22 @@ html(lang="es")
                                 img.right.pos-ab.pos-casa.responsive-img(src="assets/img/home/slider/house.png")
                                 img.right.pos-ab.responsive-img.pos-sun(src="assets/img/home/slider/sun.png")
                         +parrafo-princ("We are creative nerds","Why our Clients love to work with us lore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
-            .section#parrafos.container-fluid.col.m6
+            .section#parrafos.container-fluid
                 .row
-                    mixin parrafos(titulo,parrafo)
-                        .col.s4.m6.center
-                            h4.mg-t #{titulo}
-                            p.estilo-parrafo #{parrafo}
-                    +parrafos("Increadibly Responsive","Why our Clients love to work with us lore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
-                        .col.s4.m6.center
-                            h4.mg-t #{titulo}
-                            p.estilo-parrafo #{parrafo}
-                    +parrafos("Superior Typography","Why our Clients love to work with us lore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
-                        .col.s4.m6.center
-                            h4.mg-t #{titulo}
-                            p.estilo-parrafo #{parrafo}
-                    +parrafos("Swift Page Builder","Why our Clients love to work with us lore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+                    .col.s12
+                        mixin parrafos(titulo,parrafo)
+                            .col.s4.center
+                                h4.mg-t #{titulo}
+                                p.estilo-parrafo #{parrafo}
+                        +parrafos("Increadibly Responsive","Why our Clients love to work with us lore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+                            .col.s4.center
+                                h4.mg-t #{titulo}
+                                p.estilo-parrafo #{parrafo}
+                        +parrafos("Superior Typography","Why our Clients love to work with us lore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+                            .col.s4.center
+                                h4.mg-t #{titulo}
+                                p.estilo-parrafo #{parrafo}
+                        +parrafos("Swift Page Builder","Why our Clients love to work with us lore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
             section#bicicleta-div.col.m6
                 .row
                     .col.s12
@@ -131,7 +132,7 @@ html(lang="es")
                         .row
                             h5.left Address
                         .row
-                            p Antonio Caso Mz.66
+                            p Antonio Caso Mz.9000
                             p Lote 13, Col Zona Escolar
                             p Gustavo A. Madero
                     .col.s4
@@ -148,11 +149,8 @@ html(lang="es")
                 .row
                     .col.s1
                         img.cuadro-verde(src="assets/img/home/profile2.png")
-         script(type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js")               
+         script(type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js")   
          script(type="text/javascript" src="../node_modules/materialize-css/dist/js/materialize.min.js")
          script(type="text/javascript" src="./assets/js/main.js")
-         
-
-
-
-
+         script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js")  
+         script(type="text/javascript", src="template.js", id="index")
