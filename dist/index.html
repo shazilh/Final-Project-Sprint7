@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../node_modules/materialize-css/dist/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Replica con Pug</title>
+    <title>Replica con Pug,Handlebars,sass,Jade</title>
   </head>
   <body>
     <div class="container-fluid responsive-img">
@@ -24,10 +24,10 @@
           <div class="container-fluid responsive-img">
             <div class="col s6">
               <ul class="right">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">PAGES<i class="material-icons">arrow_drop_down</i></a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="prices.html">PAGES<i class="material-icons">arrow_drop_down</i></a></li>
                 <li><a href="#">BLOG<i class="material-icons">arrow_drop_down</i></a></li>
-                <li><a href="#">PORTAFOLIO<i class="material-icons">arrow_drop_down</i></a></li>
+                <li><a href="portafolio.html">PORTAFOLIO<i class="material-icons">arrow_drop_down</i></a></li>
                 <li><a href="#">SHORTCODES<i class="material-icons">arrow_drop_down</i></a></li>
                 <li><a href="#"><i class="material-icons">search</i></a></li>
               </ul>
@@ -36,16 +36,20 @@
         </div>
       </div>
     </div>
-    <section id="hill" class="container-fluid col m6">
-      <div class="row">
-                <div class="col s6 m6">
-                  <div class="elementos">
-                    <h4>We are creative nerds</h4>
-                    <p class="estilo-parrafo">Why our Clients love to work with us lore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  </div>
-                  <button class="btn right-align">Sign Up</button>
-                </div>
-                <div class="container col s6 m6"><img src="assets/img/home/slider/hill.png" class="right pos-rel pos-hill responsive-img"><img src="assets/img/home/slider/birds1.png" class="right pos-ab responsive-img pos-bird1"><img src="assets/img/home/slider/birds2.png" class="right pos-ab responsive-img pos-bird2"><img src="assets/img/home/slider/house.png" class="right pos-ab pos-casa responsive-img"><img src="assets/img/home/slider/sun.png" class="right pos-ab responsive-img pos-sun"></div>
+    <section id="hill">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col s12 m12 l12">
+          </div>
+                      <div class="col s12 m6">
+                        <div class="elementos">
+                          <h4 id="titulo-h4">We are creative nerds</h4>
+                          <p id="parrafo" class="estilo-parrafo">Why our Clients love to work with us lore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <button class="btn right-align">Sign Up</button>
+                      </div>
+                      <div id="imagenes-media" class="col s12 m6"><img src="assets/img/home/slider/hill.png" class="right pos-rel pos-hill responsive-img"><img src="assets/img/home/slider/birds1.png" class="right pos-ab responsive-img pos-bird1"><img src="assets/img/home/slider/birds2.png" class="right pos-ab responsive-img pos-bird2"><img src="assets/img/home/slider/house.png" class="right pos-ab pos-casa responsive-img"><img src="assets/img/home/slider/sun.png" class="right pos-ab responsive-img pos-sun"></div>
+        </div>
       </div>
     </section>
     <div id="parrafos" class="section container-fluid">
@@ -151,9 +155,11 @@
         </div>
       </section>
     </footer>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js">              
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js">
       <script type="text/javascript" src="../node_modules/materialize-css/dist/js/materialize.min.js"></script>
       <script type="text/javascript" src="./assets/js/main.js"></script>
+      <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+      <script type="text/javascript" src="../template.js" id="index"></script>
     </script>
   </body>
 </html>

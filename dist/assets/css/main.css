@@ -55,7 +55,7 @@ h4 {
 
 .pos-casa {
   margin-top: 20%;
-  margin-left: 230px !important; }
+  margin-left: 23% !important; }
 
 .pos-hill {
   margin-top: 150px; }
@@ -135,7 +135,7 @@ h5 {
   color: grey; }
 
 .tamano-textarea {
-  width: 500px;
+  width: 200px;
   height: 200px; }
 
 .estilo-btn {
@@ -158,5 +158,15 @@ h5 {
   padding-right: 10px;
   color: dimgrey !important;
   list-style: none; }
+
+@media only screen and (max-width: 320px) {
+  #imagenes-media {
+    display: none; }
+
+  #titulo-h4 {
+    width: 320px; }
+
+  #parrafo {
+    width: 320px; } }
 
 /*# sourceMappingURL=main.css.map */

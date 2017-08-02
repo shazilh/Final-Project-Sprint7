@@ -14,7 +14,7 @@ gulp.task('sass:watch', function () {
 });
 
 gulp.task('jade', function(){
-    gulp.src('./src/templates/*.jade')//aqui esta nuestro archivo
+    gulp.src('./src/**/*.jade')//aqui esta nuestro archivo
     .pipe(jade({
         pretty: true
     }))
@@ -22,7 +22,7 @@ gulp.task('jade', function(){
 })
 //para que este alerta a cualquier cambio hecho en mis archivos jade
 gulp.task('watch', function(){
-    gulp.watch('./src/templates/*.jade', ['jade'])
+    gulp.watch('./src/**/*.jade', ['jade'])
 });
 
 gulp.task('default', ['jade', 'watch'])
