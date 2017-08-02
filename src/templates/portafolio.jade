@@ -1,15 +1,46 @@
 extend layout
 block append main
-        section#banner-gris.container-fluid
-            .row
-               .col.s12.left
-                    h1 Portfolio
-                    h6 Be Creative
-        section#sub-menu.container-fluid
-            .row
-                .col.12.center
-                    p#action
+        section#banner-gris
+            .container-fluid
+                .row
+                   .col.s12.left
+                        h1 Portfolio
+                        h6 Be Creative
+        section#sub-menu
+            .container-fluid
+                .row
+                    .col.s12.m12.l12.center
+                        img.responsive-img(src="assets/img/home/activeicon.png")
+                        span#action.action-style //uso de handlebars
+        section#cuadros
+            .container-fluid
+                .row
+                    .col.s12.m12.l12.center
+                        mixin cuadros(imagen, pie)
+                            .col.s3
+                                img.responsive-img(src="./assets/img/portfolio/#{imagen}.jpg")
+                                h6 #{pie}
+                        +cuadros(1, "Sailing Vivamus")
+                        +cuadros(2, "Sailing Vivamus")
+                        +cuadros(3, "Sailing Vivamus")
+                        +cuadros(4, "Sailing Vivamus")
+                            .col.s3
+                        +cuadros(5, "Sailing Vivamus")
+                        +cuadros(6, "Sailing Vivamus")
+                        +cuadros(7, "Sailing Vivamus")
+                        +cuadros(8, "Sailing Vivamus")
+                            .col.s3
+                        +cuadros(9, "Sailing Vivamus")
+                        +cuadros(10, "Sailing Vivamus")
+                        +cuadros(11, "Sailing Vivamus")
+                        +cuadros(12, "Sailing Vivamus")
+                            .col.s3
+                        +cuadros(13, "Sailing Vivamus")
+                        +cuadros(14, "Sailing Vivamus")
+                        +cuadros(15, "Sailing Vivamus")
+                        +cuadros(16, "Sailing Vivamus")
+                        
         script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js")  
-        script(type="text/javascript", src="template.js", id="index")
+        script(type="text/javascript", src="../template.js", id="index")
         
                     
