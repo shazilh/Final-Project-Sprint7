@@ -11,7 +11,7 @@ block append main
                 .row
                     .col.s12.m12.l12.center
                         img.responsive-img(src="assets/img/home/activeicon.png")
-                        span#action.action-style //uso de handlebars
+                        span#action.action-style
         section#cuadros
             .container-fluid
                 .row
@@ -39,8 +39,10 @@ block append main
                         +cuadros(14, "Sailing Vivamus")
                         +cuadros(15, "Sailing Vivamus")
                         +cuadros(16, "Sailing Vivamus")
-                        
-        script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js")  
+
+        script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js")
         script(type="text/javascript", src="../template.js", id="index")
-        
-                    
+        block append script2
+
+
+

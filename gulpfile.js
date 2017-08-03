@@ -14,11 +14,16 @@ gulp.task('sass:watch', function () {
 });
 
 gulp.task('jade', function(){
-    gulp.src('./src/**/*.jade')//aqui esta nuestro archivo
-    .pipe(jade({
-        pretty: true
-    }))
-    .pipe(gulp.dest('./dist'))//aqui tiene que mandar los resultados
+    gulp.src('./src/*.jade')//aqui esta nuestro archivo
+        .pipe(jade({
+            pretty: true
+        }))
+        .pipe(gulp.dest('./dist'));//aqui tiene que mandar los resultados
+    gulp.src('./src/templates/*.jade')
+        .pipe(jade({
+            pretty: true
+        }))
+        .pipe(gulp.dest('./dist'));
 })
 //para que este alerta a cualquier cambio hecho en mis archivos jade
 gulp.task('watch', function(){

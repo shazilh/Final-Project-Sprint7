@@ -151,7 +151,7 @@ h5{
     background-color:cadetblue;
 }
 
-/*Estilos para la segunda plantilla*/
+/*Estilos para la plantilla Portafolio*/
 #banner-gris{
     width: 100%;
     height: 300px;
@@ -167,6 +167,101 @@ h5{
     color:dimgrey!important;
     list-style: none;
 }
+/*Estilos para la plantilla-prices*/
+.caja-rectangulo-azul{
+    background-color:#2943c4;
+    height: 70px;
+    color:white;
+    padding-top:20px;
+}
+.caja-rectangulo-rojo{
+    background-color:red;
+    height: 70px;
+    color:white;
+    padding-top:20px;
+}
+.caja-rectangulo-amarillo{
+    background-color:#ffbb00;
+    height: 70px;
+    color:white;
+    padding-top:20px;
+}
+.caja-rectangulo-verde{
+    background-color:#577a43;
+    height: 70px;
+    color:white;
+    padding-top:20px;
+}
+.caja-triangulo-azul{
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-top: 50px solid #2943c4;
+    border-left: 100px solid transparent;
+    border-bottom: 20px solid transparent;
+    margin-top:0px!important;
+    margin-left:25px;
+    position:relative;
+}
+.caja-triangulo-rojo{
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-top: 50px solid red;
+    border-left: 100px solid transparent;
+    border-bottom: 20px solid transparent;
+    margin-top:20px!important;
+    margin-left:25px;
+}
+.caja-triangulo-amarillo{
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-top: 50px solid #ffbb00;
+    border-left: 100px solid transparent;
+    border-bottom: 20px solid transparent;
+    margin-top:20px!important;
+    margin-left:25px;
+}
+.caja-triangulo-verde{
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-top: 50px solid #577a43;
+    border-left: 100px solid transparent;
+    border-bottom: 20px solid transparent;
+    margin-top:20px!important;
+    margin-left:25px;
+}
+.estilo-lista li{
+    background: #dcecf2;
+    width:100%;
+    text-align:left;
+    margin-bottom:4px!important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.estilo-caja{
+    background-color:#2943c4!important;
+    color:white!important;
+    text-align: center !important;
+}
+.estilo-caja.rojo{
+    background-color:red!important;
+    color:white!important;
+    text-align: center !important;
+}
+.estilo-caja.amarillo{
+    background-color:#ffbb00!important;
+    color:white!important;
+    text-align: center !important;
+}
+.estilo-caja.verde{
+    background-color:#577a43!important;
+    color:white!important;
+    text-align: center !important;
+}
+
 
 @media only screen and (max-width: 320px){
 
