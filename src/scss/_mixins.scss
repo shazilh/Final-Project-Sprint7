@@ -1,0 +1,10 @@
+@mixin subtitle {
+        font: {
+            family: $fuente-maven;
+            size: subtitle-font-size;
+        }
+        color: black;
+    }
+@mixin encabezado-baner-gris{
+	font-family:fuente-maven;
+}

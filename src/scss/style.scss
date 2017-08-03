@@ -1,116 +1,149 @@
 @import 'espacios';
 @import 'fuentes';
 @import 'colors';
-mixin
-*{
-    margin:0;
+@import 'mixins';
+
+
+* {
+    margin: 0;
 }
-.icon-soc{
-	padding:$espacio-enlaces;
+
+.icon-soc {
+    padding: $espacio-enlaces;
 }
-.estilo-li{
-	margin-left:$espacio-enlaces-li;
+
+.estilo-li {
+    margin-left: $espacio-enlaces-li;
 }
-.pd{
-	padding:5px!important;
+
+.pd {
+    padding: 5px!important;
 }
-ul li{
-	display:inline-block;
-	padding-left:5px!important;
-	$espacio-largo-nav:100px;
-	color:grey!important;
+
+ul li {
+    display: inline-block;
+    padding-left: 5px!important;
+    $espacio-largo-nav: 100px;
+    color: grey!important;
 }
-.espacio{
-	margin-left:250px;
+
+.espacio {
+    margin-left: 250px;
 }
-.under{
-	width:100%;
-}
-.footer-png{
+
+.under {
     width: 100%;
 }
 
-.pos-ab{
-	position:absolute;
-}
-.pos-rel{
-    position:relative;
+.footer-png {
+    width: 100%;
 }
 
-.elementos{
-  padding: 5%;
-  padding-right: 42%;
-  margin-top: 10%;
-
+.pos-ab {
+    position: absolute;
 }
+
+.pos-rel {
+    position: relative;
+}
+
+.elementos {
+    padding: 5%;
+    padding-right: 42%;
+    margin-top: 10%;
+}
+
+
 /*estilos de la seccion hill*/
-.ciudad{
+
+.ciudad {
     width: 100%;
 }
-#hill{
+
+#hill {
     width: 100%;
     height: 500px;
     background-image: url("../img/home/slider-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
-h4{
+
+h4 {
     font-family: $fuente-maven;
 }
-.estilo-parrafo{
+
+.estilo-parrafo {
     font-size: $tamano-fuente;
 }
-.pos-casa{
+
+.pos-casa {
     margin-top: 20%;
     margin-left: 23%!important;
 }
-.pos-hill{
+
+.pos-hill {
     margin-top: 150px;
 }
-.pos-bird1{
+
+.pos-bird1 {
     margin-top: 20%;
     margin-left: 180px;
 }
-.pos-sun{
+
+.pos-sun {
     margin-top: 20%;
     margin-left: 280px;
 }
-.pos-bird2{
+
+.pos-bird2 {
     margin-top: 15%;
     margin-left: 600px;
 }
-.btn{
+
+.btn {
     background-color: transparent!important;
-    color:aquamarine!important;
+    color: aquamarine!important;
     border-color: aquamarine!important;
     border-style: solid!important;
     border-radius: 25%!important;
     margin-left: 40px!important;
 }
-.mg-l{
-    margin-left:  10px;
+
+.mg-l {
+    margin-left: 10px;
 }
+
+
 /*section  3 parrafos*/
-#parrafos{
+
+#parrafos {
     height: 400px;
 }
-.mg-t{
+
+.mg-t {
     margin-top: $margin-top-mediano;
 }
+
+
 /*section bicicleta-div*/
-#bicicleta-div{
+
+#bicicleta-div {
     width: 100%;
     height: 200px;
     background-image: url("../img/home/tour-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
-#dos-columnas{
+
+#dos-columnas {
     height: 700px;
     margin-top: $margin-top-mediano;
 }
+
+
 /*section timon*/
-#timon{
+
+#timon {
     width: 100%;
     height: 400px;
     background-image: url("../img/home/clients.png");
@@ -118,8 +151,11 @@ h4{
     background-position: center;
     opacity: .5;
 }
+
+
 /*seccion final*/
-#final{
+
+#final {
     width: 100%;
     height: 660px;
     background-image: url("../img/home/footer.png");
@@ -127,32 +163,40 @@ h4{
     background-position: center;
     background-size: cover;
 }
-.espacio2{
+
+.espacio2 {
     margin-bottom: 200px;
 }
-.cuadro-azul{
+
+.cuadro-azul {
     margin-top: 90px;
     margin-left: 100px;
 }
-.cuadro-verde{
+
+.cuadro-verde {
     margin-top: -110px;
     margin-left: 100px;
 }
-h5{
-    color:$color-gris;
+
+h5 {
+    color: $color-gris;
 }
-.tamano-textarea{
+
+.tamano-textarea {
     width: 200px;
     height: 200px;
 }
-.estilo-btn{
+
+.estilo-btn {
     width: 500px;
-    color:white;
-    background-color:cadetblue;
+    color: white;
+    background-color: cadetblue;
 }
 
+
 /*Estilos para la plantilla Portafolio*/
-#banner-gris{
+
+#banner-gris {
     width: 100%;
     height: 300px;
     background-image: url("../img/home/tour-bg.png");
@@ -160,115 +204,156 @@ h5{
     background-position: center;
     background-size: cover;
 }
-.action-style li{
+
+.action-style li {
     display: inline-block;
     padding-left: 10px;
     padding-right: 10px;
-    color:dimgrey!important;
+    color: dimgrey!important;
     list-style: none;
 }
+
+
 /*Estilos para la plantilla-prices*/
-.caja-rectangulo-azul{
-    background-color:#2943c4;
+
+.caja-rectangulo-azul {
+    background-color: #2943c4;
     height: 70px;
-    color:white;
-    padding-top:20px;
+    color: white;
+    padding-top: 20px;
 }
-.caja-rectangulo-rojo{
-    background-color:red;
+
+.caja-rectangulo-rojo {
+    background-color: red;
     height: 70px;
-    color:white;
-    padding-top:20px;
+    color: white;
+    padding-top: 20px;
 }
-.caja-rectangulo-amarillo{
-    background-color:#ffbb00;
+
+.caja-rectangulo-amarillo {
+    background-color: #ffbb00;
     height: 70px;
-    color:white;
-    padding-top:20px;
+    color: white;
+    padding-top: 20px;
 }
-.caja-rectangulo-verde{
-    background-color:#577a43;
+
+.caja-rectangulo-verde {
+    background-color: #577a43;
     height: 70px;
-    color:white;
-    padding-top:20px;
+    color: white;
+    padding-top: 20px;
 }
-.caja-triangulo-azul{
+/*
+.caja-triangulo-azul {
     width: 0;
     height: 0;
     border-right: 100px solid transparent;
     border-top: 50px solid #2943c4;
     border-left: 100px solid transparent;
     border-bottom: 20px solid transparent;
-    margin-top:0px!important;
-    margin-left:25px;
-    position:relative;
-}
-.caja-triangulo-rojo{
+    margin-top: 0px!important;
+    margin-left: 25px;
+    position: relative;
+}*/
+
+.caja-triangulo-rojo {
     width: 0;
     height: 0;
     border-right: 100px solid transparent;
     border-top: 50px solid red;
     border-left: 100px solid transparent;
     border-bottom: 20px solid transparent;
-    margin-top:20px!important;
-    margin-left:25px;
+    margin-top: 20px!important;
+    margin-left: 25px;
 }
-.caja-triangulo-amarillo{
+
+.caja-triangulo-amarillo {
     width: 0;
     height: 0;
     border-right: 100px solid transparent;
     border-top: 50px solid #ffbb00;
     border-left: 100px solid transparent;
     border-bottom: 20px solid transparent;
-    margin-top:20px!important;
-    margin-left:25px;
+    margin-top: 20px!important;
+    margin-left: 25px;
 }
-.caja-triangulo-verde{
+
+.caja-triangulo-verde {
     width: 0;
     height: 0;
     border-right: 100px solid transparent;
     border-top: 50px solid #577a43;
     border-left: 100px solid transparent;
     border-bottom: 20px solid transparent;
-    margin-top:20px!important;
-    margin-left:25px;
+    margin-top: 20px!important;
+    margin-left: 25px;
 }
-.estilo-lista li{
+
+.estilo-lista li {
     background: #dcecf2;
-    width:100%;
-    text-align:left;
-    margin-bottom:4px!important;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 4px!important;
     padding-top: 5px;
     padding-bottom: 5px;
 }
-.estilo-caja{
-    background-color:#2943c4!important;
-    color:white!important;
-    text-align: center !important;
-}
-.estilo-caja.rojo{
-    background-color:red!important;
-    color:white!important;
-    text-align: center !important;
-}
-.estilo-caja.amarillo{
-    background-color:#ffbb00!important;
-    color:white!important;
-    text-align: center !important;
-}
-.estilo-caja.verde{
-    background-color:#577a43!important;
-    color:white!important;
+
+.estilo-caja {
+    background-color: #2943c4!important;
+    color: white!important;
     text-align: center !important;
 }
 
+.estilo-caja.rojo {
+    background-color: red!important;
+    color: white!important;
+    text-align: center !important;
+}
 
-@media only screen and (max-width: 320px){
+.estilo-caja.amarillo {
+    background-color: #ffbb00!important;
+    color: white!important;
+    text-align: center !important;
+}
 
-       #imagenes-media{
-       		display:none;
-        }
-       #titulo-h4{ width:320px; }
-       #parrafo{ width:320px; }
+.estilo-caja.verde {
+    background-color: #577a43!important;
+    color: white!important;
+    text-align: center !important;
+}
+.subtitulo{
+    font-size:30px;
+}
 
+@media only screen and (min-width: 320px)and (max-width:600px) {
+    #imagenes-media {
+        display: none;
+    }
+    #titulo-h4 {
+        width: 320px;
+    }
+    #parrafo {
+        width: 320px;
+    }
+    .caja-triangulo-azul {
+        border-right: 100px solid transparent;
+        border-top: 50px solid #2943c4;
+        border-left: 100px solid transparent;
+        border-bottom: 20px solid transparent;
+        margin-top: 0px!important;
+        margin-left: 25px;
+    }
+}
+@media only screen and (min-width: 1200px){
+       .caja-triangulo-azul {
+        border-right: 100px solid transparent;
+        border-top: 50px solid #2943c4;
+        border-left: 100px solid transparent;
+        border-bottom: 20px solid transparent;
+        margin-top: 0px!important;
+        margin-left: 25px;
+    }
+}
+h1{
+    @include encabezado-baner-gris;
 }

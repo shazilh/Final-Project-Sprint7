@@ -5,84 +5,100 @@ block append main
                 .row
                    .col.s12.left
                         h1 Pricing Table
-                        h6 Configure your pricing table
+                        p.subtitulo Configure your pricing table
         section#pricing-table
             .container
                 .row
-                    .col.s12.m12.l12.center
-                        p#action-prices
-                            .row
-                                script(type="text/x-handlebars-template", id="index2")
-                                    p. {{{#each[paquete_tipo]}}}
-                                    .col.s3
-                                        .caja-rectangulo-azul.center Basic Plan {{{tipo}}}
-                                        p.caja-triangulo-azul.center {{{ precio }}}
-                                                ul.estilo-lista
-                                                    li.letra-gris {{{lorem1}}} Lorem ipsum dolor sit amet
-                                                        i.material-icons.right check
-                                                    li.letra-gris {{{lorem2}}} Consectetuer adipiscing elit
-                                                        i.material-icons.right close
-                                                    li.letra-gris {{{lorem3}}} Nulla consequat massa quis enim
-                                                        i.material-icons.right close
-                                                    li.letra-gris {{{lorem4}}} Aenean vulputate eleifend tellus
-                                                        i.material-icons.right check
-                                                    li.letra-gris {{{lorem5}}} Donec sodales sagittis magna
-                                                        i.material-icons.right close
-                                                    li.letra-gris {{{lorem6}}} Curabitur ullamcorper ultricies nisi
-                                                        i.material-icons.right check
-                                                    li.estilo-caja.center {{{buy}}} BUY NOW
-                                    .col.s3
-                                       .caja-rectangulo-rojo.center Silver Plan {{{tipo}}}
-                                            p.caja-triangulo-rojo.center {{{ precio }}}
-                                                ul.estilo-lista
-                                                    li.letra-gris {{{lorem1}}} Lorem ipsum dolor sit amet
-                                                        i.material-icons.right check
-                                                    li.letra-gris {{{lorem2}}} Consectetuer adipiscing elit
-                                                        i.material-icons.right close
-                                                    li.letra-gris {{{lorem3}}} Nulla consequat massa quis enim
-                                                        i.material-icons.right close
-                                                    li.letra-gris {{{lorem4}}} Aenean vulputate eleifend tellus
-                                                        i.material-icons.right check
-                                                    li.letra-gris {{{lorem5}}} Donec sodales sagittis magna
-                                                        i.material-icons.right close
-                                                    li.letra-gris {{{lorem6}}} Curabitur ullamcorper ultricies nisi
-                                                        i.material-icons.right check
-                                                    li.estilo-caja.rojo.center {{{buy}}} BUY NOW
-                                     .col.s3
-                                       .caja-rectangulo-amarillo.center Gold Plan {{{tipo}}}
-                                            p.caja-triangulo-amarillo.center {{{ precio }}}
-                                                ul.estilo-lista
-                                                    li.letra-gris {{{lorem1}}} Lorem ipsum dolor sit amet
-                                                        i.material-icons.right check
-                                                    li.letra-gris {{{lorem2}}} Consectetuer adipiscing elit
-                                                        i.material-icons.right close
-                                                    li.letra-gris {{{lorem3}}} Nulla consequat massa quis enim
-                                                        i.material-icons.right close
-                                                    li.letra-gris {{{lorem4}}} Aenean vulputate eleifend tellus
-                                                        i.material-icons.right check
-                                                    li.letra-gris {{{lorem5}}} Donec sodales sagittis magna
-                                                        i.material-icons.right close
-                                                    li.letra-gris {{{lorem6}}} Curabitur ullamcorper ultricies nisi
-                                                        i.material-icons.right check
-                                                    li.estilo-caja.amarillo.center {{{buy}}} BUY NOW
-                                    .col.s3
-                                       .caja-rectangulo-verde.center Gold Plan {{{tipo}}}
-                                            p.caja-triangulo-verde.center {{{ precio }}}
-                                                ul.estilo-lista
-                                                    li.letra-gris {{{lorem1}}} Lorem ipsum dolor sit amet
-                                                        i.material-icons.right check
-                                                    li.letra-gris {{{lorem2}}} Consectetuer adipiscing elit
-                                                        i.material-icons.right close
-                                                    li.letra-gris {{{lorem3}}} Nulla consequat massa quis enim
-                                                        i.material-icons.right close
-                                                    li.letra-gris {{{lorem4}}} Aenean vulputate eleifend tellus
-                                                        i.material-icons.right check
-                                                    li.letra-gris {{{lorem5}}} Donec sodales sagittis magna
-                                                        i.material-icons.right close
-                                                    li.letra-gris {{{lorem6}}} Curabitur ullamcorper ultricies nisi
-                                                        i.material-icons.right check
-                                                    li.estilo-caja.verde.center {{{buy}}} BUY NOW
-
+                    div#action-prices
+                    script(type="text/x-handlebars-template", id="index2")
+                        p. {{{#each[paquete_tipo]}}}
+                        .row
+                            .col.s3.l3
+                                .caja-rectangulo-azul.center Basic Plan {{{tipo}}}
+                                p.caja-triangulo-azul.center {{{ precio }}}
+                                        ul.estilo-lista
+                                            li.letra-gris {{{lorem1}}} Lorem ipsum dolor sit amet
+                                                i.material-icons.right check
+                                            li.letra-gris {{{lorem2}}} Consectetuer adipiscing elit
+                                                i.material-icons.right close
+                                            li.letra-gris {{{lorem3}}} Nulla consequat massa quis enim
+                                                i.material-icons.right close
+                                            li.letra-gris {{{lorem4}}} Aenean vulputate eleifend tellus
+                                                i.material-icons.right check
+                                            li.letra-gris {{{lorem5}}} Donec sodales sagittis magna
+                                                i.material-icons.right close
+                                            li.letra-gris {{{lorem6}}} Curabitur ullamcorper ultricies nisi
+                                                i.material-icons.right check
+                                            li.estilo-caja.center {{{buy}}} BUY NOW
+                            .col.s3.l3
+                               .caja-rectangulo-rojo.center Silver Plan {{{tipo}}}
+                                    p.caja-triangulo-rojo.center {{{ precio }}}
+                                        ul.estilo-lista
+                                            li.letra-gris {{{lorem1}}} Lorem ipsum dolor sit amet
+                                                i.material-icons.right check
+                                            li.letra-gris {{{lorem2}}} Consectetuer adipiscing elit
+                                                i.material-icons.right close
+                                            li.letra-gris {{{lorem3}}} Nulla consequat massa quis enim
+                                                i.material-icons.right close
+                                            li.letra-gris {{{lorem4}}} Aenean vulputate eleifend tellus
+                                                i.material-icons.right check
+                                            li.letra-gris {{{lorem5}}} Donec sodales sagittis magna
+                                                i.material-icons.right close
+                                            li.letra-gris {{{lorem6}}} Curabitur ullamcorper ultricies nisi
+                                                i.material-icons.right check
+                                            li.estilo-caja.rojo.center {{{buy}}} BUY NOW
+                             .col.s3.l3
+                               .caja-rectangulo-amarillo.center Gold Plan {{{tipo}}}
+                                    p.caja-triangulo-amarillo.center {{{ precio }}}
+                                        ul.estilo-lista
+                                            li.letra-gris {{{lorem1}}} Lorem ipsum dolor sit amet
+                                                i.material-icons.right check
+                                            li.letra-gris {{{lorem2}}} Consectetuer adipiscing elit
+                                                i.material-icons.right close
+                                            li.letra-gris {{{lorem3}}} Nulla consequat massa quis enim
+                                                i.material-icons.right close
+                                            li.letra-gris {{{lorem4}}} Aenean vulputate eleifend tellus
+                                                i.material-icons.right check
+                                            li.letra-gris {{{lorem5}}} Donec sodales sagittis magna
+                                                i.material-icons.right close
+                                            li.letra-gris {{{lorem6}}} Curabitur ullamcorper ultricies nisi
+                                                i.material-icons.right check
+                                            li.estilo-caja.amarillo.center {{{buy}}} BUY NOW
+                            .col.s3.l3
+                               .caja-rectangulo-verde.center Gold Plan {{{tipo}}}
+                                    p.caja-triangulo-verde.center {{{ precio }}}
+                                        ul.estilo-lista
+                                            li.letra-gris {{{lorem1}}} Lorem ipsum dolor sit amet
+                                                i.material-icons.right check
+                                            li.letra-gris {{{lorem2}}} Consectetuer adipiscing elit
+                                                i.material-icons.right close
+                                            li.letra-gris {{{lorem3}}} Nulla consequat massa quis enim
+                                                i.material-icons.right close
+                                            li.letra-gris {{{lorem4}}} Aenean vulputate eleifend tellus
+                                                i.material-icons.right check
+                                            li.letra-gris {{{lorem5}}} Donec sodales sagittis magna
+                                                i.material-icons.right close
+                                            li.letra-gris {{{lorem6}}} Curabitur ullamcorper ultricies nisi
+                                                i.material-icons.right check
+                                            li.estilo-caja.verde.center {{{buy}}} BUY NOW
+                        .row
+                            .col.s3.l3
+                                .caja-rectangulo-azul.center Basic Plan {{{tipo}}}
+                                p.caja-triangulo-azul.center {{{ precio }}}
+                                        ul.estilo-lista
+                                            li.letra-gris {{{lorem1}}} Lorem ipsum dolor sit amet
+                                                i.material-icons.right check
+                                            li.letra-gris {{{lorem2}}} Consectetuer adipiscing elit
+                                                i.material-icons.right close
+                                            li.letra-gris {{{lorem3}}} Nulla consequat massa quis enim
+                                                i.material-icons.right close
+                                            li.letra-gris {{{lorem4}}} Aenean vulputate eleifend tellus
+                                                i.material-icons.right check
+                                            li.letra-gris {{{lorem5}}} Donec sodales sagittis magna
+                                                i.material-icons.right close
+                                            li.letra-gris {{{lorem6}}} Curabitur ullamcorper ultricies nisi
+                                                i.material-icons.right check
+                                            li.estilo-caja.center {{{buy}}} BUY NOW
 
         script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js")
         script(type="text/javascript", src="../template.js", id="index2")

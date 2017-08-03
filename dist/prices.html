@@ -26,7 +26,7 @@
               <ul class="right">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="prices.html">PAGES<i class="material-icons">arrow_drop_down</i></a></li>
-                <li><a href="#">BLOG<i class="material-icons">arrow_drop_down</i></a></li>
+                <li><a href="about.html">BLOG<i class="material-icons">arrow_drop_down</i></a></li>
                 <li><a href="portafolio.html">PORTAFOLIO<i class="material-icons">arrow_drop_down</i></a></li>
                 <li><a href="#">SHORTCODES<i class="material-icons">arrow_drop_down</i></a></li>
                 <li><a href="#"><i class="material-icons">search</i></a></li>
@@ -41,7 +41,7 @@
         <div class="row">
           <div class="col s12 left">
             <h1>Pricing Table</h1>
-            <h6>Configure your pricing table</h6>
+            <p class="subtitulo">Configure your pricing table</p>
           </div>
         </div>
       </div>
@@ -49,74 +49,87 @@
     <section id="pricing-table">
       <div class="container">
         <div class="row">
-          <div class="col s12 m12 l12 center">
-            <p id="action-prices">
-              <div class="row">
-                <script type="text/x-handlebars-template" id="index2">
-                  <p></p>
-                  <div class="col s3">
-                    <div class="caja-rectangulo-azul center">Basic Plan {{{tipo}}}</div>
-                    <p class="caja-triangulo-azul center">{{{ precio }}}
-                      <ul class="estilo-lista">
-                        <li class="letra-gris">{{{lorem1}}} Lorem ipsum dolor sit amet<i class="material-icons right">check</i></li>
-                        <li class="letra-gris">{{{lorem2}}} Consectetuer adipiscing elit<i class="material-icons right">close</i></li>
-                        <li class="letra-gris">{{{lorem3}}} Nulla consequat massa quis enim<i class="material-icons right">close</i></li>
-                        <li class="letra-gris">{{{lorem4}}} Aenean vulputate eleifend tellus<i class="material-icons right">check</i></li>
-                        <li class="letra-gris">{{{lorem5}}} Donec sodales sagittis magna<i class="material-icons right">close</i></li>
-                        <li class="letra-gris">{{{lorem6}}} Curabitur ullamcorper ultricies nisi<i class="material-icons right">check</i></li>
-                        <li class="estilo-caja center">{{{buy}}} BUY NOW</li>
-                      </ul>
-                    </p>
-                  </div>
-                  <div class="col s3">
-                    <div class="caja-rectangulo-rojo center">Silver Plan {{{tipo}}}
-                      <p class="caja-triangulo-rojo center">{{{ precio }}}
-                        <ul class="estilo-lista">
-                          <li class="letra-gris">{{{lorem1}}} Lorem ipsum dolor sit amet<i class="material-icons right">check</i></li>
-                          <li class="letra-gris">{{{lorem2}}} Consectetuer adipiscing elit<i class="material-icons right">close</i></li>
-                          <li class="letra-gris">{{{lorem3}}} Nulla consequat massa quis enim<i class="material-icons right">close</i></li>
-                          <li class="letra-gris">{{{lorem4}}} Aenean vulputate eleifend tellus<i class="material-icons right">check</i></li>
-                          <li class="letra-gris">{{{lorem5}}} Donec sodales sagittis magna<i class="material-icons right">close</i></li>
-                          <li class="letra-gris">{{{lorem6}}} Curabitur ullamcorper ultricies nisi<i class="material-icons right">check</i></li>
-                          <li class="estilo-caja rojo center">{{{buy}}} BUY NOW</li>
-                        </ul>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col s3">
-                    <div class="caja-rectangulo-amarillo center">Gold Plan {{{tipo}}}
-                      <p class="caja-triangulo-amarillo center">{{{ precio }}}
-                        <ul class="estilo-lista">
-                          <li class="letra-gris">{{{lorem1}}} Lorem ipsum dolor sit amet<i class="material-icons right">check</i></li>
-                          <li class="letra-gris">{{{lorem2}}} Consectetuer adipiscing elit<i class="material-icons right">close</i></li>
-                          <li class="letra-gris">{{{lorem3}}} Nulla consequat massa quis enim<i class="material-icons right">close</i></li>
-                          <li class="letra-gris">{{{lorem4}}} Aenean vulputate eleifend tellus<i class="material-icons right">check</i></li>
-                          <li class="letra-gris">{{{lorem5}}} Donec sodales sagittis magna<i class="material-icons right">close</i></li>
-                          <li class="letra-gris">{{{lorem6}}} Curabitur ullamcorper ultricies nisi<i class="material-icons right">check</i></li>
-                          <li class="estilo-caja amarillo center">{{{buy}}} BUY NOW</li>
-                        </ul>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col s3">
-                    <div class="caja-rectangulo-verde center">Gold Plan {{{tipo}}}
-                      <p class="caja-triangulo-verde center">{{{ precio }}}
-                        <ul class="estilo-lista">
-                          <li class="letra-gris">{{{lorem1}}} Lorem ipsum dolor sit amet<i class="material-icons right">check</i></li>
-                          <li class="letra-gris">{{{lorem2}}} Consectetuer adipiscing elit<i class="material-icons right">close</i></li>
-                          <li class="letra-gris">{{{lorem3}}} Nulla consequat massa quis enim<i class="material-icons right">close</i></li>
-                          <li class="letra-gris">{{{lorem4}}} Aenean vulputate eleifend tellus<i class="material-icons right">check</i></li>
-                          <li class="letra-gris">{{{lorem5}}} Donec sodales sagittis magna<i class="material-icons right">close</i></li>
-                          <li class="letra-gris">{{{lorem6}}} Curabitur ullamcorper ultricies nisi<i class="material-icons right">check</i></li>
-                          <li class="estilo-caja verde center">{{{buy}}} BUY NOW</li>
-                        </ul>
-                      </p>
-                    </div>
-                  </div>
-                </script>
+          <div id="action-prices"></div>
+          <script type="text/x-handlebars-template" id="index2">
+            <p></p>
+            <div class="row">
+              <div class="col s3 l3">
+                <div class="caja-rectangulo-azul center">Basic Plan {{{tipo}}}</div>
+                <p class="caja-triangulo-azul center">{{{ precio }}}
+                  <ul class="estilo-lista">
+                    <li class="letra-gris">{{{lorem1}}} Lorem ipsum dolor sit amet<i class="material-icons right">check</i></li>
+                    <li class="letra-gris">{{{lorem2}}} Consectetuer adipiscing elit<i class="material-icons right">close</i></li>
+                    <li class="letra-gris">{{{lorem3}}} Nulla consequat massa quis enim<i class="material-icons right">close</i></li>
+                    <li class="letra-gris">{{{lorem4}}} Aenean vulputate eleifend tellus<i class="material-icons right">check</i></li>
+                    <li class="letra-gris">{{{lorem5}}} Donec sodales sagittis magna<i class="material-icons right">close</i></li>
+                    <li class="letra-gris">{{{lorem6}}} Curabitur ullamcorper ultricies nisi<i class="material-icons right">check</i></li>
+                    <li class="estilo-caja center">{{{buy}}} BUY NOW</li>
+                  </ul>
+                </p>
               </div>
-            </p>
-          </div>
+              <div class="col s3 l3">
+                <div class="caja-rectangulo-rojo center">Silver Plan {{{tipo}}}
+                  <p class="caja-triangulo-rojo center">{{{ precio }}}
+                    <ul class="estilo-lista">
+                      <li class="letra-gris">{{{lorem1}}} Lorem ipsum dolor sit amet<i class="material-icons right">check</i></li>
+                      <li class="letra-gris">{{{lorem2}}} Consectetuer adipiscing elit<i class="material-icons right">close</i></li>
+                      <li class="letra-gris">{{{lorem3}}} Nulla consequat massa quis enim<i class="material-icons right">close</i></li>
+                      <li class="letra-gris">{{{lorem4}}} Aenean vulputate eleifend tellus<i class="material-icons right">check</i></li>
+                      <li class="letra-gris">{{{lorem5}}} Donec sodales sagittis magna<i class="material-icons right">close</i></li>
+                      <li class="letra-gris">{{{lorem6}}} Curabitur ullamcorper ultricies nisi<i class="material-icons right">check</i></li>
+                      <li class="estilo-caja rojo center">{{{buy}}} BUY NOW</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+              <div class="col s3 l3">
+                <div class="caja-rectangulo-amarillo center">Gold Plan {{{tipo}}}
+                  <p class="caja-triangulo-amarillo center">{{{ precio }}}
+                    <ul class="estilo-lista">
+                      <li class="letra-gris">{{{lorem1}}} Lorem ipsum dolor sit amet<i class="material-icons right">check</i></li>
+                      <li class="letra-gris">{{{lorem2}}} Consectetuer adipiscing elit<i class="material-icons right">close</i></li>
+                      <li class="letra-gris">{{{lorem3}}} Nulla consequat massa quis enim<i class="material-icons right">close</i></li>
+                      <li class="letra-gris">{{{lorem4}}} Aenean vulputate eleifend tellus<i class="material-icons right">check</i></li>
+                      <li class="letra-gris">{{{lorem5}}} Donec sodales sagittis magna<i class="material-icons right">close</i></li>
+                      <li class="letra-gris">{{{lorem6}}} Curabitur ullamcorper ultricies nisi<i class="material-icons right">check</i></li>
+                      <li class="estilo-caja amarillo center">{{{buy}}} BUY NOW</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+              <div class="col s3 l3">
+                <div class="caja-rectangulo-verde center">Gold Plan {{{tipo}}}
+                  <p class="caja-triangulo-verde center">{{{ precio }}}
+                    <ul class="estilo-lista">
+                      <li class="letra-gris">{{{lorem1}}} Lorem ipsum dolor sit amet<i class="material-icons right">check</i></li>
+                      <li class="letra-gris">{{{lorem2}}} Consectetuer adipiscing elit<i class="material-icons right">close</i></li>
+                      <li class="letra-gris">{{{lorem3}}} Nulla consequat massa quis enim<i class="material-icons right">close</i></li>
+                      <li class="letra-gris">{{{lorem4}}} Aenean vulputate eleifend tellus<i class="material-icons right">check</i></li>
+                      <li class="letra-gris">{{{lorem5}}} Donec sodales sagittis magna<i class="material-icons right">close</i></li>
+                      <li class="letra-gris">{{{lorem6}}} Curabitur ullamcorper ultricies nisi<i class="material-icons right">check</i></li>
+                      <li class="estilo-caja verde center">{{{buy}}} BUY NOW</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s3 l3">
+                <div class="caja-rectangulo-azul center">Basic Plan {{{tipo}}}</div>
+                <p class="caja-triangulo-azul center">{{{ precio }}}
+                  <ul class="estilo-lista">
+                    <li class="letra-gris">{{{lorem1}}} Lorem ipsum dolor sit amet<i class="material-icons right">check</i></li>
+                    <li class="letra-gris">{{{lorem2}}} Consectetuer adipiscing elit<i class="material-icons right">close</i></li>
+                    <li class="letra-gris">{{{lorem3}}} Nulla consequat massa quis enim<i class="material-icons right">close</i></li>
+                    <li class="letra-gris">{{{lorem4}}} Aenean vulputate eleifend tellus<i class="material-icons right">check</i></li>
+                    <li class="letra-gris">{{{lorem5}}} Donec sodales sagittis magna<i class="material-icons right">close</i></li>
+                    <li class="letra-gris">{{{lorem6}}} Curabitur ullamcorper ultricies nisi<i class="material-icons right">check</i></li>
+                    <li class="estilo-caja center">{{{buy}}} BUY NOW</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </script>
         </div>
       </div>
     </section>
