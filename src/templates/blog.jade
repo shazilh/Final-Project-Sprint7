@@ -1,0 +1,41 @@
+extend layout
+block append main
+      section#banner-gris
+            .container-fluid
+                .row
+                   .col.s12.left
+                        h1 Blog
+                        p.subtitulo Blog with left slider
+      section.container
+          .row
+            div.col.s3
+                mixin tarjetas(imagen, icono, tag, titulo, posted, texto, view, corazon, cantidad, chat, mensaje)
+                    img.img-responsive(src="assets/img/blog/masonary/#{imagen}")
+                    span
+                        img(src="assets/img/ico/#{icono}")
+                    span #{tag}
+                    h5 #{titulo}
+                    a #{posted}
+                    p #{texto}
+                    a #{view}
+                    span
+                        img(src="assets/img/ico/#{corazon}")
+                    span #{cantidad}
+                    span
+                        img(src="assets/img/ico/#{chat}")
+                    a #{mensaje}
+                    hr
+                +tarjetas("1.jpg", "1.png", "Creative", "Advance business cards desing", "Posted by micron News", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odit quidem laboriosam veritatis quae unde molestiae facilis eligendi eius[…]", "View more", "2.png", "32 Love", "3.png", "3 Comments")
+                +tarjetas("2.jpg", "1.png", "Creative", "Advance business cards desing", "Posted by micron News", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odit quidem laboriosam veritatis quae unde molestiae facilis eligendi eius[…]", "View more", "2.png", "32 Love", "3.png", "3 Comments")
+                +tarjetas("9.jpg", "1.png", "Creative", "Advance business cards desing", "Posted by micron News", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odit quidem laboriosam veritatis quae unde molestiae facilis eligendi eius[…]", "View more", "2.png", "32 Love", "3.png", "3 Comments")
+            div.col.s3
+               +tarjetas("3.jpg", "1.png", "Creative", "Advance business cards desing", "Posted by micron News", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odit quidem laboriosam veritatis quae unde molestiae facilis eligendi eius[…]", "View more", "2.png", "32 Love", "3.png", "3 Comments")
+               +tarjetas("2.jpg", "1.png", "Creative", "Advance business cards desing", "Posted by micron News", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odit quidem laboriosam veritatis quae unde molestiae facilis eligendi eius[…]", "View more", "2.png", "32 Love", "3.png", "3 Comments")
+               +tarjetas("2.jpg", "1.png", "Creative", "Advance business cards desing", "Posted by micron News", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odit quidem laboriosam veritatis quae unde molestiae facilis eligendi eius[…]", "View more", "2.png", "32 Love", "3.png", "3 Comments")
+            div.col.s3
+                +tarjetas("6.jpg", "1.png", "Creative", "Advance business cards desing", "Posted by micron News", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odit quidem laboriosam veritatis quae unde molestiae facilis eligendi eius[…]", "View more", "2.png", "32 Love", "3.png", "3 Comments")
+                +tarjetas("10.jpg", "1.png", "Creative", "Advance business cards desing", "Posted by micron News", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odit quidem laboriosam veritatis quae unde molestiae facilis eligendi eius[…]", "View more", "2.png", "32 Love", "3.png", "3 Comments")
+            div.col.s3
+                +tarjetas("8.jpg", "1.png", "Creative", "Advance business cards desing", "Posted by micron News", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odit quidem laboriosam veritatis quae unde molestiae facilis eligendi eius[…]", "View more", "2.png", "32 Love", "3.png", "3 Comments")
+                +tarjetas("3.jpg", "1.png", "Creative", "Advance business cards desing", "Posted by micron News", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odit quidem laboriosam veritatis quae unde molestiae facilis eligendi eius[…]", "View more", "2.png", "32 Love", "3.png", "3 Comments")
+                +tarjetas("7.jpg", "1.png", "Creative", "Advance business cards desing", "Posted by micron News", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odit quidem laboriosam veritatis quae unde molestiae facilis eligendi eius[…]", "View more", "2.png", "32 Love", "3.png", "3 Comments")
